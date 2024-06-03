@@ -1,1 +1,1 @@
-# qwizup.github.io
+# qwaze.github.io
