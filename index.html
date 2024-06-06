@@ -11,7 +11,7 @@
   <!-- Favicons -->
   <link href="assets/img/quiz-en-ligne.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
@@ -53,14 +53,14 @@
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
-
-      <a class="btn-getstarted" href="#about">Get Started</a>
-
-    </div>
+      
+      <a class="btn-getstarted" href="#" data-toggle="modal" data-target="#demoModal">Book a Demo</a>
+      
+      
   </header>
 
   <main class="main">
-
+      
     <!-- Hero Section -->
     <section id="hero" class="hero section">
 
@@ -70,8 +70,9 @@
             <h1 class="">Better Solution For Generating Quizes</h1>
            
             <div class="d-flex">
-              <a href="#about" class="btn-get-started">Get Started</a>
-              <a href="https://drive.google.com/file/d/1tSGv7E3mJYdPxqNxXVDgOFY1yVoYFKPx/view" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
+              <a href="#" class="btn-get-started" data-toggle="modal" data-target="#demoModal">Book a Demo</a>
+             <!--  <a href="https://drive.google.com/file/d/1tSGv7E3mJYdPxqNxXVDgOFY1yVoYFKPx/view" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>-->
+           
             </div>
           </div>
           <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-out" data-aos-delay="200">
@@ -81,7 +82,28 @@
       </div>
 
     </section><!-- /Hero Section -->
-
+    <div class="modal fade" id="demoModal" tabindex="-1" role="dialog" aria-labelledby="demoModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="demoModalLabel">Book a Demo</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="email">Email address</label>
+                <input type="email" class="form-control" required id="email" aria-describedby="emailHelp" placeholder="Enter email">
+              </div>
+              <button type="submit" class="btn btn-primary" data-dismiss="modal">Send</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  
     <!-- Clients Section -->
    <!-- /Clients Section -->
 
@@ -137,32 +159,32 @@
           <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
             <div class="service-item position-relative">
               <div class="icon"><i class="bi bi-activity icon"></i></div>
-              <h4><a href="service-details.html" class="stretched-link">Automated Quiz Generation</a></h4>
-              <p>Qwaze leverages advanced AI technology to automatically generate quizzes from the course materials uploaded by educators. </p>
+              <h4><a href="service-details.html" class="stretched-link">Generate</a></h4>
+              <p>Once the course materials are uploaded, the QWAZE LLM engine takes over to generate the quiz questions. The AI uses natural language processing (NLP) and machine learning algorithms to analyze the uploaded documents and identify relevant information, such as key terms, concepts, and definitions. The AI then generates quiz questions based on this information, ensuring that the questions are accurate, relevant, and engaging for the students. </p>
             </div>
           </div><!-- End Service Item -->
 
           <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
             <div class="service-item position-relative">
-              <div class="icon"><i class="bi bi-bounding-box-circles icon"></i></div>
-              <h4><a href="service-details.html" class="stretched-link">Customizable Quizzes</a></h4>
-              <p>Qwaze provides educators with the flexibility to customize quizzes to better align with their specific educational goals and curriculum requirements. Teachers can tailor quizzes to suit the unique needs of their students and courses.</p>
+              <div class="icon"><i class="bi bi-file-earmark-arrow-up icon"></i></div>
+              <h4><a href="service-details.html" class="stretched-link">Upload</a></h4>
+              <p>The first step in the QWAZE process is to upload the course materials and documents provided by the educators. This can be done by simply dragging and dropping the files into the QWAZE platform or by uploading them manually. The platform supports various file formats, including PDF, Word, and PowerPoint, to ensure that educators can upload their materials in the format that is most convenient for them.</p>
             </div>
           </div><!-- End Service Item -->
 
           <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
             <div class="service-item position-relative">
               <div class="icon"><i class="bi bi-calendar4-week icon"></i></div>
-              <h4><a href="service-details.html" class="stretched-link">Comprehensive Analytics</a></h4>
-              <p>Qwaze offers detailed analytics and reporting tools that provide educators with valuable insights into student performance. These analytics help teachers identify learning gaps, track progress, and adjust their teaching strategies accordingly.</p>
+              <h4><a href="service-details.html" class="stretched-link">Customize</a></h4>
+              <p>After the quiz questions are generated, educators can customize them to fit their specific needs. This includes the ability to edit the questions, add or remove questions, and adjust the difficulty level of the quiz. The customization options allow educators to tailor the quiz to their students' needs and learning styles, ensuring that the quiz is both challenging and engaging.</p>
             </div>
           </div><!-- End Service Item -->
 
           <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="400">
             <div class="service-item position-relative">
-              <div class="icon"><i class="bi bi-broadcast icon"></i></div>
-              <h4><a href="service-details.html" class="stretched-link">Multi-Format Accessibility</a></h4>
-              <p>Qwaze ensures that quizzes are accessible to all students, regardless of their technological resources or internet connectivity. Quizzes can be taken directly on the platform or downloaded in formats such as Google form.</p>
+              <div class="icon"><i class="bi bi-share-fill icon"></i></div>
+              <h4><a href="service-details.html" class="stretched-link">Share</a></h4>
+              <p>Finally, educators share the quizzes with students via the platform directely or have them as a google form with. Qwaze ensures quizzes are accessible  and provides tools for tracking student performance, enhancing the overall learning experience.</p>
             </div>
           </div><!-- End Service Item -->
 
@@ -193,7 +215,7 @@
 
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
             <div class="team-member d-flex align-items-start">
-              <div class="pic"><img src="assets/img/team/personnes.png" class="img-fluid" alt=""></div>
+              <div class="pic"><img src="assets/img/team/mahmoudi.jpg" class="img-fluid" alt=""></div>
               <div class="member-info">
                 <h4>Abdelhak Mahmoudi</h4>
                 <span>Chief Executive Officer</span>
@@ -393,10 +415,13 @@
   <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
   <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
-
+ 
 </body>
 
 </html>
+
